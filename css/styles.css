@@ -410,6 +410,7 @@ ol {
   height: 92px;
   border: 1px solid var(--color-social-media-links);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .clients-link {
@@ -425,13 +426,6 @@ ol {
   fill: var(--accent-color);
 }
 
-.clients-border:focus {
-  color: var(--accent-color);
-}
-
-.clients-link:focus {
-  color: var(--accent-color);
-}
 /* Section footer */
 
 .footer {
