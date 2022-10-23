@@ -123,12 +123,9 @@ ol {
   text-decoration-line: none;
   cursor: pointer;
 }
-.auth-nav .item {
-  cursor: pointer;
-}
 
 .auth-nav-icon {
-  color: var(--title-text-color);
+  fill: var(--title-text-color);
   margin-right: 10px;
 }
 
@@ -136,13 +133,13 @@ ol {
   display: block;
   padding-top: 33px;
   padding-bottom: 33px;
+  align-items: center;
 }
 
 .auth-nav .link {
   color: var(--font-family);
   padding-top: 32px;
   padding-bottom: 32px;
-  align-items: center;
 }
 
 .site-nav .link:hover,
@@ -151,6 +148,11 @@ ol {
 .auth-nav .link:focus {
   color: var(--accent-color);
   text-decoration-line: none;
+}
+
+.auth-nav-icon:hover,
+.auth-nav-icon:focus {
+  fill: var(--accent-color);
 }
 
 /* Section замовити послугу button */
@@ -411,7 +413,7 @@ ol {
   gap: 30px;
 }
 
-.clients-border {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,19 +421,20 @@ ol {
   height: 92px;
   border: 1px solid var(--color-social-media-links);
   border-radius: 4px;
-  cursor: pointer;
-}
-
-.clients-link {
-  display: flex;
   fill: var(--color-social-media-links);
   background-color: var(--white-color);
 }
 
-.clients-border:hover {
+.clients-border {
+  display: flex;
+}
+
+.clients-link:hover {
+  fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-.clients-link:hover {
+
+.clients-link:focus {
   fill: var(--accent-color);
 }
 
@@ -443,9 +446,15 @@ ol {
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+}
+
+.footer-left {
+  width: 231px;
+}
+
 .logo-footer {
-  height: 31px;
-  margin-top: 60px;
   text-decoration-line: none;
 }
 
@@ -484,6 +493,38 @@ ol {
   text-decoration: none;
 }
 
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.title-footer-right {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+.footer-media {
+  display: flex;
+}
+
+.social-link-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon-footer {
+  fill: #ffffff;
+}
+
 /* Page 2 */
 
 /* Main*/
@@ -518,6 +559,7 @@ ol {
 .sort:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Portfolio cards */
@@ -533,6 +575,12 @@ ol {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+.portfolio-items:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-items:nth-child(3n + 3) {
   margin-right: 0;
 }
