@@ -125,7 +125,8 @@ ol {
 }
 
 .auth-nav-icon {
-  fill: var(--title-text-color);
+  display: inline-flex;
+  fill: var(--color-social-media-links);
   margin-right: 10px;
 }
 
@@ -137,22 +138,37 @@ ol {
 }
 
 .auth-nav .link {
+  display: flex;
   color: var(--font-family);
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus,
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.site-nav .link:focus {
   color: var(--accent-color);
   text-decoration-line: none;
 }
 
+.header-link-effects {
+  display: block;
+}
+
+/* .auth-nav .link:hover,
+.header-link-effects:focus {
+  fill: var(--accent-color);
+  color: var(--accent-color);
+  text-decoration-line: none;
+} */
+
+.link:hover,
+.link:focus,
 .auth-nav-icon:hover,
 .auth-nav-icon:focus {
   fill: var(--accent-color);
+  color: var(--accent-color);
+  text-decoration-line: none;
 }
 
 /* Section замовити послугу button */
@@ -328,7 +344,6 @@ ol {
 
 .member-team {
   background-color: var(--background-color-primary);
-  align-items: center;
   width: 270px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -355,9 +370,7 @@ ol {
 
 .social-icon-container {
   display: flex;
-  width: 206px;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
   margin-bottom: 30px;
   gap: 10px;
 }
@@ -448,6 +461,7 @@ ol {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-left {
@@ -496,13 +510,10 @@ ol {
 .footer-right {
   display: flex;
   flex-direction: column;
-  width: 206px;
   margin-left: 70px;
-  padding-top: 12px;
 }
 
-.title-footer-right {
-  display: flex;
+.paragraph-footer-right {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -511,10 +522,6 @@ ol {
   margin-bottom: 20px;
 
   color: #ffffff;
-}
-
-.footer-media {
-  display: flex;
 }
 
 .social-link-footer {
@@ -575,8 +582,13 @@ ol {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+.portfolio-card-effects {
+  display: block;
+  text-decoration: none;
+}
 
-.portfolio-items:hover {
+.portfolio-card-effects:hover,
+.portfolio-card-effects:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
