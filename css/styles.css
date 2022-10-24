@@ -146,26 +146,9 @@ ol {
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-  text-decoration-line: none;
-}
-
-.header-link-effects {
-  display: block;
-}
-
-/* .auth-nav .link:hover,
-.header-link-effects:focus {
-  fill: var(--accent-color);
-  color: var(--accent-color);
-  text-decoration-line: none;
-} */
-
+.site-nav .link:focus,
 .link:hover,
-.link:focus,
-.auth-nav-icon:hover,
-.auth-nav-icon:focus {
+.link:focus {
   fill: var(--accent-color);
   color: var(--accent-color);
   text-decoration-line: none;
